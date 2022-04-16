@@ -1,0 +1,203 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: rgb(52, 95, 112);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    background: none;
+    border: none;
+   
+   
+}
+button:hover {
+    cursor: pointer;
+}
+.btn-one button {
+    position: relative;
+    background-color: rgb(52, 95, 112);
+    border: 5px solid red;
+    border-radius: 10px;
+    color: red;
+    background: transparent;
+}
+
+.btn-one button::before {
+  
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    
+    background-color: red;
+    
+    transform: scaleX(0);
+    transition: 0.3s ease-in-out 0s;
+
+}
+.btn-one button:hover::before {
+    transform: scaleX(1);
+    
+}
+
+.btn-one button {
+    transition: color 0.3s ease-in-out;
+    z-index: 1;
+
+}
+
+.btn-one button:hover {
+    color: white;
+}
+
+.btn-two button {
+    color: black;
+    border: 5px solid yellow;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    background-color: rgb(48, 73, 139);
+    overflow: hidden;
+}
+
+.btn-two button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: yellow;
+    transition: transform 0.3s ease-in-out;
+
+    transform: scale(1.5);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.btn-two button:hover::before {
+    transform: scale(0);
+    color: black;
+}
+.btn-two button {
+    transition: color 0.3s ease-in-out;
+    z-index: 1;
+}
+.btn-two button:hover {
+    color: white;
+}
+
+.btn-three button {
+    border: 5px solid blue;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+
+}
+.btn-three button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: blue;
+    border-radius: 45% 43% 49% 51% / 54% 63% 44% 49% ;
+    transition: transform 3s ease-in-out;
+    transform: rotate(45deg);
+    z-index: -1;
+    opacity: 0.5;
+}
+.btn-three button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: blue;
+    border-radius: 25% 43% 49% 51% / 54% 63% 44% 49% ;
+    transition: transform 5s ease-in-out;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+.btn-three button:hover::before,
+.btn-three button:hover::after {
+    transform: rotate(360deg);
+    color: white;
+}
+
+.btn-three button {
+    transition: color 3s ease-in-out;
+    z-index: 1;
+    
+}
+
+.btn-three button:hover {
+    color: white;
+}
+
+.btn-four button {
+    position: relative;
+    border: 2px solid green;
+    border-radius: 10px;
+    color: white;
+    overflow: hidden;
+
+}
+
+.btn-four button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: green;
+    z-index: -1;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-four button:hover:before {
+    background-color: black;
+    box-shadow: 3px 5px green;
+}
+
+.btn-four button {
+    z-index: 1;
+}
+
+.btn-five button {
+    position: relative;
+    border: 2px solid #eb34a8;
+    border-radius: 10px;
+    color: white;
+    background-color: #eb34a8;
+    box-shadow: 20px 20px 0 black ; 
+    transition: box-shadow 0.2s ease-in-out; 
+}
+
+
+.btn-five button:hover {
+    box-shadow: 10px 10px 0 black;
+   
+}

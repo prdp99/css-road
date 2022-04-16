@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    padding: 10px;
+    text-shadow: 3px 3px 5px black;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    color: #FFC83D;
+    
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: cadetblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.emoji {
+    width: 230px;
+    height: 230px;
+    background-color: #FFC83D;
+    border-radius: 50%;
+    border: 10px solid black;
+    overflow: hidden;
+    position: relative;
+}
+
+.eye1 {
+    width: 50px;
+    height: 50px;
+    border: 10px solid transparent;
+    border-top-color: black;
+    border-left-color: black;
+    border-radius: 50%;
+    top: 70px;
+    left: 40px;
+    position: relative;
+    transform: rotate(45deg);
+}
+#laugh .eye1 {
+    width: 30px;
+    height: 50px;
+    top: 65px;
+    background-color: black;
+    position: relative;
+    border: 5px solid black;
+    overflow: hidden;
+    transform: rotate(180deg) translateX(-15px);
+    
+    
+}
+#mask .eye1 {
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    border: 10px solid black;
+    border-width: 0 6px 8px 6px;
+    border-top-color: black;
+    border-left-color: black;
+    border-radius: 10px 10px 40px 40px ;
+    top: 70px;
+    left: 55px;
+    transform: rotate(0deg) translateX(-10px);  
+}
+
+.eye2 {
+    width: 50px;
+    height: 50px;
+    border: 10px solid transparent;
+    border-top-color: black;
+    border-left-color: black;
+    border-radius: 50%;
+    top: 20px;
+    left: 120px;
+    position: relative;
+    transform: rotate(45deg);
+}
+
+#laugh .eye2 {
+    width: 30px;
+    height: 50px;
+    top: 15px;
+    right: 30px;
+    background-color: black;
+    position: relative;
+    border: 5px solid black;
+    overflow: hidden;
+    transform: rotate(-180deg) translateX(-10px);
+    right: 30px;
+}
+
+#mask .eye2 {
+    width: 50px;
+    height: 25px;
+    border: 10px solid black;
+    border-width: 0px 6px 8px 6px;
+    border-radius: 10px 10px 40px 40px;
+    position: absolute;
+    top: 70px;
+    transform: rotate(-1deg);
+}
+
+.mouth {
+    width: 90px;
+    height: 50px;
+    top: 30px;
+    border-radius: 5% 5% 50px 50px;
+    background-color: black;
+    position: relative;
+    left:60px;
+    border: 5px solid black;
+    overflow: hidden;
+}
+
+#laugh .mouth {
+    width: 100px;
+    height: 50px;
+    top: 40px;
+    border-radius: 5% 5% 50px 50px;
+    background-color: black;
+    position: relative;
+    left:55px;
+    border: 5px solid black;
+    overflow: hidden;
+}
+
+#mask .mouth {
+    position: absolute;
+    width: 120px;
+    height: 70px;
+    top: 110px;
+    left: 45px;
+    border-radius: 20% 20% 40% 40%;
+    background-color: white;
+    border: 5px solid rgb(255, 255, 255);
+    overflow: hidden;
+    
+}
+
+.teeth {
+    width: 100%;
+    height: 20%;
+    background-color: white;
+    position: absolute;
+}
+
+.tongue {
+    position: inherit;
+    width: 40px;
+    height: 20px;
+    background-color: #FE4333;
+    top: 25px;
+    border-radius: 50%;
+    left: 20px;   
+}
+
+#laugh .tongue {
+    position: inherit;
+     width: 40px;
+     height: 20px;
+     background-color: #FE4333;
+     top: 25px;
+     border-radius: 50%;
+     left: 25px;   
+ }
+ 
+ #mask .tongue {
+    position: inherit;
+     width: 40px;
+     height: 20px;
+     background-color: white;
+     top: 25px;
+     border-radius: 50%;
+     left: 25px;   
+ }
+
+ 
+.strap1 {
+    position: absolute;
+    width: 70px;
+    height: 10px;
+    background-color: white;
+    border-top-color: white;
+    border-radius: 0 0 50% 50%;
+    bottom: 95px;
+    left: -10px;
+    transform: rotate(25deg);   
+ }
+
+ .strap2 {
+    position: absolute;
+    width: 70px;
+    height: 10px;
+    background-color: white;
+    border-top-color: white;
+    border-radius: 0 0 50% 50%;
+    border-color: #FE4333;
+    bottom:45px;
+    left: 0px;
+    transform: rotate(-5deg);  
+ }
+
+ .strap3 {
+    position: absolute;
+    width: 70px;
+    height: 10px;
+    background-color: white;
+    border-top-color: white;
+    border-radius: 0 0 50% 50%;
+    bottom: 90px;
+    right: -5px;
+    transform: rotate(-20deg); 
+ }
+
+ .strap4 {
+    position: absolute;
+    width: 70px;
+    height: 10px;
+    background-color: white;
+    border-top-color: white;
+    border-radius: 0 0 50% 50%;
+    border-color: #FE4333;
+   bottom: 50px;
+   right: 0px;
+ }
+
+ #mask .drop {
+     position: absolute;
+     height: 40px;
+     width: 20px;
+     left: 30px;
+     top: 30px;
+ }
+
+ .drop::before,
+ .drop::after {
+     content: '';
+     position: absolute;
+ }
+
+ .drop::before {
+     border: 10px solid transparent;
+     bottom: 31px;
+     border-bottom-color: rgb(0,188,242);
+     transform: scaleY(3);
+ }
+ .drop::after {
+     width: 20px;
+     height: 20px;
+     background-color: rgb(0,188,242);
+     border-radius: 50%;
+     top: 20px;
+
+ }
