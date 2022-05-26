@@ -1,42 +1,40 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 .container {
-    background-color: burlywood;
-    padding: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    font-family: Arial, Helvetica, sans-serif;
+  background-color: #4f5d75;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-
 .image {
-    background-image: url("chime.gif");
-    background-size: cover;
-    background-position: center;
-    width: 540px;
-    height: 304px;
-    border-radius: 5px;
-    position: relative;
-    background-color: rgb(99, 67, 26);
-    
-
+  background-image: url("chime.gif");
+  background-size: cover;
+  background-position: center;
+  width: 304px;
+  height: 304px;
+  border-radius: 50%;
+  position: relative;
+  background-color: rgb(99, 67, 26);
 }
 
 .image::before,
 .image::after {
   --scale: 0;
   --arrow-size: 20px;
-  --tooltip-color: yellow;
+  --tooltip-color: #ffffff;
 
   position: absolute;
-  top: -.25rem;
+  top: -0.25rem;
   left: 50%;
-  transform: translateX(-50%) translateY(var(--translate-y, 0)) scale(var(--scale));
+  transform: translateX(-50%) translateY(var(--translate-y, 0))
+    scale(var(--scale));
   transition: 150ms transform;
   transform-origin: bottom center;
 }
@@ -46,8 +44,8 @@
 
   content: attr(data-tooltip);
   color: black;
-  padding: .5rem;
-  border-radius: .3rem;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
   text-align: center;
   width: max-content;
   max-width: 100%;
@@ -62,7 +60,7 @@
 .image::after {
   --translate-y: calc(-1 * var(--arrow-size));
 
-  content: '';
+  content: "";
   border: var(--arrow-size) solid transparent;
   border-top-color: var(--tooltip-color);
   transform-origin: top center;
